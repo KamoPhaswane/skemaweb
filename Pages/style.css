@@ -1,0 +1,43 @@
+#colorNav li ul li {
+    background-color: #313131;
+}
+
+#colorNav li ul li a {
+    padding: 12px;
+    color: #fff !important;
+    text-decoration: none !important;
+    display: block;
+}
+
+#colorNav li ul li:nth-child(odd) {
+    /* zebra stripes */
+    background-color: #363636;
+}
+
+#colorNav li ul li:hover {
+    background-color: #444;
+}
+
+#colorNav li ul li:first-child {
+    border-radius: 3px 3px 0 0;
+    margin-top: 25px;
+    position: relative;
+}
+
+#colorNav li ul li:first-child:before {
+    /* the pointer tip */
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 5px solid transparent;
+    border-bottom-color: #313131;
+    left: 50%;
+    top: -10px;
+    margin-left: -5px;
+}
+
+#colorNav li ul li:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
